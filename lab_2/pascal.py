@@ -13,3 +13,4 @@ for i in range(n):
 for row in triangle:
     print(' '*n, *row, sep=' ')
     n -= 1
+
