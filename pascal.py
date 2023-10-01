@@ -7,7 +7,7 @@ for i in range(n):
         if j == 0 or j == i:
             row.append(1)
         else:
-            row.append(triangle[i-1][j-1] + triangle[i-1][j])
+            row.append(triangle[i-1][j] + triangle[i-1][j-1])
     triangle.append(row)
 
 for row in triangle:
