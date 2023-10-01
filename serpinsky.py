@@ -1,5 +1,5 @@
-n = int(input("Введите количество строк треугольника Паскаля: "))
-
+n = int(input("Введите глубину треугольника: "))
+n = (3 ** n)
 triangle = []
 for i in range(n):
     row = []
@@ -10,7 +10,12 @@ for i in range(n):
             row.append(triangle[i-1][j-1] + triangle[i-1][j])
     triangle.append(row)
 
+
 for row in triangle:
+    for i in range(len(row)):
+        if row[i] % 3 == 1 or row[i] % 3 == 2:
+            row[i] = '*'
+        else:
+            row[i] = ' '
     print(' '*n, *row, sep=' ')
     n -= 1
-
