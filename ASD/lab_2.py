@@ -9,35 +9,6 @@ string = (input())
 stack = []
 s_right = True
 z_right = True
-
-operands = []
-    operators = []
-    current_operand = ""
-    for char in string:
-        if char.isdigit() or char == ".":
-            current_operand += char
-        else:
-            if current_operand:
-                operands.append(float(current_operand))
-                current_operand = ""
-            if char in "+-*/":
-                operators.append(char)
-
-    if current_operand:
-        operands.append(float(current_operand))
-
-    while operators:
-        operator = operators.pop(0)
-        if operator == "*":
-            operands[0] = operands[0] * operands[1]
-        elif operator == "/":
-            operands[0] = operands[0] / operands[1]
-        elif operator == "+":
-            operands[0] = operands[0] + operands[1]
-        elif operator == "-":
-            operands[0] = operands[0] - operands[1]
-        operands.pop(1)
-
 if string[len(string)-1] == '=':
     string = string[:-1]
 else:
