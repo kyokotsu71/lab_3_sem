@@ -41,6 +41,6 @@ elif number == 1000:
     print('тысяча')
     exit()
 else:
-    number_in_words = 'Число должно быть в диапазоне от 1 до 1000'
+    number_in_words = 'Число должно быть от 1 до 1000'
 
 print(number_in_words)
