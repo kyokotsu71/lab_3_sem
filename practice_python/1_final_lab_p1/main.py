@@ -63,8 +63,6 @@ def DelNaN(file_path):
         writer.writerows(new_lines)
 
 
-
-
 def MakeDS(file_path):
     with open(file_path, 'r', encoding='utf-8-sig') as file:
         reader = csv.reader(file)
