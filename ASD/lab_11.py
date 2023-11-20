@@ -12,4 +12,3 @@ def quicksort(arr):
 arr = [3, 2, 8, 5, 1, 4, 7, 6]
 sorted_arr = quicksort(arr)
 print(sorted_arr)
-# ready
