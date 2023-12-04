@@ -1,0 +1,7 @@
+913: ['All', 'All']
+863: ['roads', 'roads']
+992: ['lead', 'lead']
+78: ['to', 'to']
+970: ['me.', 'me.']
+75: ['Unkillable']
+522: ['king']
